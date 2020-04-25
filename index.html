@@ -5,23 +5,36 @@
 
 <html lang = "en-US">
 <head>
-  <title>Guitar PRactice</title>
+	<title>Guitar PRactice</title>
 
-  <meta charset = "UTF-8">
+	<meta charset = "UTF-8">
 
-  <!-- <script src="web_version/JS/Board.js"></script> -->
+	<script src="generateNotes.js"></script>
 
-  <!-- <link rel="stylesheet" type="text/css" href="web_version/CSS/PearsStylesheet.css"> -->
-
-  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="web_version/CSS/PearsStylesheet.css"> -->
 
 </head>
-  
-<body id="mainPage" onload = "newLevel(), print_starter_msg()">
 
-  <br><br><br>
-  <pre id="temp" class="title">Practice<div class="cell pear" style="margin: 0;
-    padding: 4px;"></div></pre>
+<body id="mainPage" style="background-color: #e0d9c0; font-size: 300%; font-family: Courier New;">
+
+	<pre id="temp" class="title">Practice<div style="margin: 0;
+	padding: 4px;"></div></pre>
+
+    <button onclick="changeTimer(1000)">1s</button>
+    <button onclick="changeTimer(3000)">3s</button>
+    <button onclick="changeTimer(5000)">5s</button>
+    <button onclick="changeTimer(8000)">8s</button>
+    <button onclick="changeTimer(10000)">10s</button>
+    <button onclick="changeTimer(-1)">End</button>
+
+	<pre id="line0">    - - - E</pre>
+    <pre id="line1">    - - - B</pre>
+    <pre id="line2">    - - - G</pre>
+    <pre id="line3">    - - - D</pre>
+    <pre id="line4">    - - - A</pre>
+    <pre id="line5">    - - - E2</pre>
+
+    <!-- <button onclick="randomNote()"></button> -->
 
 </body>
 </html>
